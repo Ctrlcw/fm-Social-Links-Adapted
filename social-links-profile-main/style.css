@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/static/Inter-Regular.ttf) format("ttf");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+  }
+
+  /* Contêiner do tema */
+.theme-container {
+    display: flex;
+    height: 5vh;
+    background-color:#121212; /* Cor de fundo clara padrão */
+    transition: background-color 0.3s ease;
+}
+
+/* Checkbox invisível */
+.checkbox {
+    display: none;
+}
+
+/* Botão de alternância de tema */
+.button {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 25px;
+    background-color: #ce9393;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+/* Ícone de tema */
+.button img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #212122; /* Cor de fundo escura */
+    color: #ffffff;
+}
+
+body.dark-mode .button {
+    background-color: #4a4a4a;
+}
+
+body.dark-mode .button img {
+    transform: rotate(200deg); /* Animação de rotação no ícone */
+}
+
+.clock-container {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  color: #a34d4d;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+
+  }
+
+
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    background-color: hsl(0, 6%, 80%);
+    box-shadow: #a34d4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: hsl(0, 0%, 12%);
+    max-width: 400px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+  }
+  
+  .container img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+  }
+  
+  .container h2 {
+    font-size: 1.8rem;
+    color:#a34d4d;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .container p {
+    color: #fff;
+    text-align: center;
+    margin-top: 2.2rem;
+  }
+  
+  .container ul {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .container ul li button {
+    background-color: hsl(0, 0%, 18%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .container ul li button:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 39%, 53%);
+  }
+  
+  .attribution {
+    font-size: 20;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    margin-top: 1rem;
+  }
+
+  .attribution a {
+    color: #b15d5d
+   
+  
+  }
